@@ -41,7 +41,7 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between">
         {/* LOGO */}
 
-        <a href="#" className="flex items-center gap-2">
+        <a href="#about" className="flex items-center gap-2">
           <div>
             <img className="h-8" src="../images/head-logo.png" alt="logo" />
           </div>

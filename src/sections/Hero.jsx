@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRight, Heart, PawPrint, ShieldCheck } from "lucide-react";
 
 import Typewriter from "../animations/Typewriter";
@@ -68,7 +68,7 @@ const Hero = () => {
         {previousSlide !== null && (
           <img
             src={slides[previousSlide].image}
-            alt="Pet care image"
+            alt="Pet care "
             className="absolute inset-0 w-full h-full object-cover  overflow-hidden object-center  object-center "
           />
         )}
@@ -77,7 +77,7 @@ const Hero = () => {
         <img
           key={slide.id}
           src={slide.image}
-          alt="pet dog image"
+          alt="pet "
           onAnimationEnd={() => setPreviousSlide(null)}
           className="absolute inset-0 w-full h-full object-cover  overflow-hidden object-fill   hero-slide-image"
         />

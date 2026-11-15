@@ -159,7 +159,7 @@ const ForProviders = () => {
           {/* CTA */}
           <motion.div variants={itemVariants} className="mt-10">
             <a
-              href="#"
+              href="#services"
               className="group inline-flex items-center gap-4 rounded-full bg-[#2F5D50] px-7 py-4 text-sm font-semibold text-white shadow-lg shadow-[#2F5D50]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#24483E] hover:shadow-xl"
             >
               Join as a Care Provider

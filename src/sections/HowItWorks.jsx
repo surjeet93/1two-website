@@ -7,7 +7,6 @@ import {
   UserRound,
   CalendarCheck,
   Heart,
-  ArrowUpRight,
 } from "lucide-react";
 import Typewriter from "../animations/Typewriter";
 
