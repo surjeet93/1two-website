@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
 
         <a
-          href="#contact"
+          href="#services"
           className="hidden lg:flex items-center gap-3 bg-[#2F5D50] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#24483E] hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
         >
           Find Pet Care
