@@ -43,7 +43,7 @@ const Navbar = () => {
 
         <a href="#about" className="flex items-center gap-2">
           <div>
-            <img className="h-8" src="../images/head-logo.png" alt="logo" />
+            <img className="h-8" src="../Images/head-logo.png" alt="logo" />
           </div>
         </a>
         <div className="hidden lg:flex items-center gap-8">

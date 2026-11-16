@@ -135,7 +135,7 @@ const Trust = () => {
                 className="group relative"
               >
                 <img
-                  src="/images/trust-pet.jpg"
+                  src="/Images/trust-pet.jpg"
                   alt="A happy dog with a caring pet professional"
                   loading="lazy"
                   className="h-full w-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"

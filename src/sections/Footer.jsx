@@ -64,7 +64,7 @@ const Footer = () => {
               className="inline-flex items-center gap-2"
             >
              <div>
-                <img className="h-12" src="../images/footer-logo.png" alt="footer-logo" />
+                <img className="h-12" src="../Images/footer-logo.png" alt="footer-logo" />
              </div>
             </a>
 

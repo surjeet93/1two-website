@@ -110,7 +110,7 @@ const About = () => {
               className="relative rounded-[35px] overflow-hidden h-[420px] md:h-[570px]"
             >
               <img
-                src="/images/about-main.jpg"
+                src="/Images/about-main.jpg"
                 alt="A pet owner sharing a loving moment with a dog"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
               />
@@ -126,7 +126,7 @@ const About = () => {
               className="absolute -bottom-10 -right-3 md:-right-10 w-40 h-44 md:w-56 md:h-60 rounded-[25px] overflow-hidden border-[8px] border-[#F8F5EE] shadow-xl"
             >
               <img
-                src="/images/about-small.jpg"
+                src="/Images/about-small.jpg"
                 alt="Happy pet"
                 className="w-full h-full object-cover"
               />

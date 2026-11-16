@@ -10,7 +10,7 @@ const services = [
     title: "Veterinary care",
     description:
       "Check-ups, vaccines and treatment at verified clinics near you.",
-    image: "../images/veterinary2.jpg",
+    image: "../Images/veterinary2.jpg",
     featured: true,
   },
   {
@@ -18,25 +18,25 @@ const services = [
     title: "Dog walking",
     description:
       "Any length of walk, with live GPS you can follow from your phone.",
-    image: "../images/dog-walking.jpg",
+    image: "../Images/dog-walking.jpg",
   },
   {
     number: "03",
     title: "Pet sitting",
     description: "Your home or theirs.",
-    image: "../images/pet-sitting.jpg",
+    image: "../Images/pet-sitting.jpg",
   },
   {
     number: "04",
     title: "Grooming",
     description: "Dogs and cats, salon or home.",
-    image: "../images/grooming.jpg",
+    image: "../Images/grooming.jpg",
   },
   {
     number: "05",
     title: "Training",
     description: "Sessions with verified trainers.",
-    image: "../images/tranning.jpg",
+    image: "../Images/tranning.jpg",
   },
 ];
 
