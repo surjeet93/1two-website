@@ -133,7 +133,7 @@ const HowItWorks = () => {
   return (
     <section
       id="how"
-      className="relative overflow-visible bg-[#F8F5EE] py-24  md:py-16 border-t border-gray-200"
+      className="relative overflow-visible bg-[#F8F5EE] py-24  md:py-20 border-t border-gray-200"
     >
       <div className="mx-auto max-w-7xl px-6 md:px-12">
         <motion.div

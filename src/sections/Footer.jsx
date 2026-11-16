@@ -46,7 +46,7 @@ const Footer = () => {
       <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full border border-white/10" />
       <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full border border-white/10" />
 
-      <div className="relative mx-auto max-w-7xl px-6 pt-20 md:px-10 lg:px-16">
+      <div className="relative mx-auto max-w-7.5xl px-6 pt-8 md:px-10 lg:px-16">
 
         {/* Top Footer */}
         <motion.div
@@ -54,7 +54,7 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8 }}
-          className="grid grid-cols-1 gap-14 border-b border-white/15 pb-16 lg:grid-cols-[1.2fr_2fr]"
+          className="grid grid-cols-1 gap-14 border-b border-white/15 pb-6 lg:grid-cols-[1.2fr_2fr]"
         >
 
           {/* Brand */}
@@ -68,21 +68,21 @@ const Footer = () => {
              </div>
             </a>
 
-            <h2 className="mt-8 max-w-sm text-3xl font-semibold leading-tight md:text-4xl">
+            <h2 className="mt-2 max-w-sm text-3xl font-semibold leading-tight md:text-4xl">
               Care connects us.
               <span className="block text-[#B9D1B7]">
                 Better care for every pet.
               </span>
             </h2>
 
-            <p className="mt-5 max-w-sm text-sm leading-7 text-white/65">
+            <p className="mt-3 max-w-sm text-sm leading-7 text-white/65">
               Better care begins with better connections. Join a community
               bringing pet owners and care providers closer together.
             </p>
 
             <a
               href="#services"
-              className="mt-7 inline-flex items-center gap-3 rounded-full bg-[#DCE8D9] px-6 py-3 text-sm font-semibold text-[#243F35] transition-all duration-300 hover:bg-white hover:gap-5"
+              className="mt-3 inline-flex items-center gap-3 rounded-full bg-[#DCE8D9] px-6 py-3 text-sm font-semibold text-[#243F35] transition-all duration-300 hover:bg-white hover:gap-5"
             >
               Discover 1TWO
               <ArrowUpRight size={17} />
@@ -136,7 +136,7 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.7 }}
-          className="grid grid-cols-1 gap-8 border-b border-white/15 py-10 sm:grid-cols-3"
+          className="grid grid-cols-1 gap-8 border-b border-white/15 py-3 sm:grid-cols-3"
         >
 
           <div className="flex items-center gap-4">
@@ -185,7 +185,7 @@ const Footer = () => {
         </motion.div>
 
         {/* Bottom Footer */}
-        <div className="flex flex-col items-center justify-between gap-5 py-7 text-center md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-5 py-4 text-center md:flex-row">
 
           <p className="text-xs text-white/50">
             © {new Date().getFullYear()} 1TWO. All rights reserved.

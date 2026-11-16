@@ -71,7 +71,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg bg-[#F8F5EE] px-5 py-10 md:px-10 lg:px-16"
+      className="relative overflow-hidden bg bg-[#F8F5EE] px-5 py-24 md:px-10 lg:px-16"
     >
       {/* Decorative Background */}
       <div className="pointer-events-none absolute -right-24 top-10 h-80 w-80 rounded-full bg-[#DCE8D9]/70 blur-3xl" />
@@ -171,16 +171,16 @@ const Services = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
-          className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-4"
+          className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-3"
         >
           {otherServices.map((service, index) => (
             <motion.div
               key={service.number}
               variants={cardVariants}
               whileHover={{ y: -8 }}
-              className={`group relative h-[330px] cursor-pointer overflow-hidden rounded-[25px] md:h-[350px] ${
+              className={`group relative h-[350px] cursor-pointer overflow-hidden rounded-[25px] md:h-[350px] ${
                 index === 1 || index === 2
-                  ? "md:col-span-3"
+                  ? "md:col-span-2"
                   : "md:col-span-1"
               }`}
             >

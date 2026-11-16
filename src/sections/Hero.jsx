@@ -33,15 +33,15 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [previousSlide, setPreviousSlide] = useState(null);
 
- useEffect(() => {
-  const interval = setInterval(() => {
-    setPreviousSlide(currentSlide);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPreviousSlide(currentSlide);
 
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  }, 2000);
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
 
-  return () => clearInterval(interval);
-}, [currentSlide]);
+    return () => clearInterval(interval);
+  }, [currentSlide]);
   // Next slide
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -68,8 +68,8 @@ const Hero = () => {
         {previousSlide !== null && (
           <img
             src={slides[previousSlide].image}
-            alt="Pet care "
-            className="absolute inset-0 w-full h-full object-cover  overflow-hidden object-center  object-center "
+            alt="Pet care"
+            className="absolute inset-0 w-full h-full object-cover object-center"
           />
         )}
 
@@ -79,13 +79,19 @@ const Hero = () => {
           src={slide.image}
           alt="pet "
           onAnimationEnd={() => setPreviousSlide(null)}
-          className="absolute inset-0 w-full h-full object-cover  overflow-hidden object-fill   hero-slide-image"
+          className="absolute inset-0 w-full h-full object-cover  overflow-hidden object-center   hero-slide-image"
         />
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-r from-[#F8F5EE] via-[#F8F5EE]/30 to-[#2F5D50]/20" />
-      <div className="relative  hero-slide-image z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pt-32 pb-20">
-        <div className=" max-w-2xl">
+      <div className="relative  z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pt-32 pb-20">
+        <motion.div
+          key={slide.id}
+          initial={{ opacity: 0, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 4, ease: "easeOut" }}
+          className="max-w-2xl"
+        >
           {/* BADGE */}
 
           <FadeUp>
@@ -104,13 +110,13 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight mt-8 text-[#242B27]"
           >
-           {slide.title}
+            {slide.title}
             <span className="block text-[#2F5D50]">Stonger connections</span>
             <span className="block transition-all duration-700 ease-in-out">
               <Typewriter
                 text={slide.subtitle}
                 speed={100}
-                delay={2000}
+                delay={0}
                 deleteSpeed={50}
               />
             </span>
@@ -120,7 +126,7 @@ const Hero = () => {
 
           <FadeUp delay={0.5}>
             <p className="text-lg md:text-xl leading-8 text-[#424B45] max-w-xl mt-7">
-             {slide.description}
+              {slide.description}
             </p>
           </FadeUp>
 
@@ -179,14 +185,13 @@ const Hero = () => {
               <p className="text-xs md:text-sm text-gray-600">Trust</p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* SLIDER CONTROLS */}
 
         <div className="absolute bottom-8 right-10 z-20 flex items-center gap-4">
           {/* PREVIOUS */}
-          <button
-            onClick={prevSlide}> </button>
+          <button onClick={prevSlide}> </button>
 
           {/* DOTS */}
           <div className="flex gap-2">
@@ -204,9 +209,7 @@ const Hero = () => {
           </div>
 
           {/* NEXT */}
-          <button
-            onClick={nextSlide}>  
-          </button>
+          <button onClick={nextSlide}></button>
         </div>
 
         {/* FLOATING DECORATION */}
